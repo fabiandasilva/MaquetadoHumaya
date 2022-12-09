@@ -1,0 +1,19 @@
+//*---------------------IMPORTS-------*/
+
+@import "./abstracts/mixins.scss";
+@import "./base/reset.scss";
+@import "./base/type.scss";
+@import "./abstracts/_variables.scss";
+
+//*---------------------COMPONENTS-----*/
+@import "./components/_navbar.scss";
+@import "./components/_products.scss";
+@import "./components/_infoHowToMake.scss";
+@import "./components/_form.scss";
+
+body {
+  max-width: 980px;
+  min-height: 100vh;
+  margin-inline: auto;
+  background-color: #dac8b2;
+}

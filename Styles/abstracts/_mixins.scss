@@ -1,0 +1,160 @@
+//*-------------------MIXINS*/
+
+//* Flex principal*/
+
+@mixin flex($direction, $wrap, $justify, $align) {
+  display: flex;
+  flex: {
+    direction: $direction;
+    wrap: $wrap;
+  }
+  justify-content: $justify;
+  align-items: $align;
+}
+
+//Navbar
+@mixin navbar-size($color, $align) {
+  color: $color;
+  font: {
+    size: 1.5rem;
+    weight: $semi-bold;
+  }
+  text: {
+    align: $align;
+    decoration: none;
+  }
+}
+//Navbar
+@mixin btn($color, $align) {
+  color: $color;
+  font: {
+    size: 1.5rem;
+    weight: $semi-bold;
+  }
+  text: {
+    align: $align;
+    decoration: none;
+  }
+}
+
+// titulo
+
+@mixin title($color, $align) {
+  color: $color;
+  font: {
+    size: 6rem;
+    weight: $extra-light;
+  }
+  text: {
+    align: $align;
+    transform: uppercase;
+    decoration: none;
+  }
+  letter-spacing: 0.1rem;
+}
+//Middle title
+@mixin middle-title($color, $align) {
+  color: $color;
+  font: {
+    size: 2.9rem;
+    weight: $semi-bold;
+  }
+  text: {
+    align: $align;
+    transform: uppercase;
+    decoration: none;
+  }
+  letter-spacing: 0.1rem;
+}
+//paragraph title
+@mixin paragraph-title($color, $align) {
+  color: $color;
+  font: {
+    size: 2.9rem;
+    weight: $light;
+  }
+  text: {
+    align: $align;
+    transform: uppercase;
+    decoration: none;
+  }
+  letter-spacing: 0.1rem;
+}
+
+// subtitulo
+
+@mixin subtitle($color, $align) {
+  color: $color;
+  font: {
+    size: 1.5rem;
+    weight: $extra-bold;
+  }
+  text: {
+    align: $align;
+    transform: uppercase;
+    decoration: none;
+  }
+  letter-spacing: 0.1rem;
+}
+
+// parrafo card
+
+@mixin card-paragraph($color, $align, $width) {
+  color: $color;
+  font: {
+    size: 1.9rem;
+    weight: $regular;
+  }
+  text: {
+    align: $align;
+    decoration: none;
+  }
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  max-width: $width;
+}
+
+// parrafo
+@mixin paragraph($color, $align, $width) {
+  color: $color;
+  font: {
+    size: 3.5rem;
+    weight: $regular;
+  }
+  text: {
+    align: $align;
+    decoration: none;
+  }
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  max-width: $width;
+  padding-right: 70px;
+}
+/* Products */
+@mixin products-title($color, $align) {
+  color: $color;
+  font: {
+    size: 2.1rem;
+    weight: $extra-bold;
+  }
+  text: {
+    align: $align;
+    transform: uppercase;
+    decoration: none;
+  }
+  letter-spacing: 0.1rem;
+}
+@mixin products-paragraph($color, $align, $width) {
+  color: $color;
+  font: {
+    size: 1.5rem;
+    weight: $regular;
+  }
+  text: {
+    align: $align;
+    decoration: none;
+  }
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  max-width: $width;
+}

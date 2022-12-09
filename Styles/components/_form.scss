@@ -1,0 +1,58 @@
+.container__form {
+  width: 100%;
+  background-color: #2d2b2b;
+  h2 {
+    @include products-title($white, center);
+    margin-bottom: 50px;
+  }
+  &__main {
+    width: 100%;
+    @include flex(row, nowrap, space-between, center);
+    &--img {
+      width: 50%;
+      > img {
+        width: 100%;
+      }
+    }
+    &--general {
+      width: 50%;
+      background-color: $white;
+      span {
+        @include products-paragraph($brown, center, 400px) {
+          font-size: 20px !important;
+        }
+        padding: 10px;
+        margin: 10px;
+      }
+      &--form {
+        height: 253px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px 30px;
+        input {
+          font-size: 10px;
+          width: 200px;
+          height: 30px;
+          border: 3px solid $brown;
+        }
+        label {
+          font-size: 10px;
+        }
+        textarea {
+          border: 3px solid $brown;
+          width: 200px;
+          height: 150px;
+        }
+        button {
+          border: 3px solid $brown;
+          width: 80px;
+          height: 30px;
+          background-color: $white;
+          margin: 20px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

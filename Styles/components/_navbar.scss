@@ -1,0 +1,67 @@
+header {
+  min-width: 320px;
+  width: 100%;
+  background-color: rgb(19, 6, 0);
+
+  nav {
+    width: 100%;
+    height: 120px;
+    padding: 10px 0;
+    list-style: none;
+    text-decoration: none;
+    ul {
+      @include flex(row, nowrap, center, center);
+      li > a {
+        @include navbar-size($white, center);
+        padding: 2rem;
+      }
+      li > img {
+        width: 80px;
+      }
+    }
+  }
+}
+.hero {
+  @include flex(column, nowrap, center, flex-end);
+  background-image: url(/img/Central/imagenCentral.png);
+  width: 980px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.1);
+
+  overflow: hidden;
+  .container {
+    @include flex(column, wrap, center, flex-start);
+    max-width: 400px;
+    min-height: 250px;
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    margin: 10px;
+    h1 {
+      @include middle-title($white, right);
+      padding-bottom: 20px;
+    }
+    p{
+      padding-bottom: 10px;
+      padding-right: 10px;
+      margin: 10px;
+
+    }
+    .container_text {
+      width: 100%;
+      @include card-paragraph($white, left, 450);
+      button {
+        width: 150px;
+        height: 40px;
+        border-radius: 61px 61px 61px 61px;
+        -moz-border-radius: 61px 61px 61px 61px;
+        -webkit-border-radius: 61px 61px 61px 61px;
+        background-color: rgba(34, 34, 34, 0.75);
+        @include btn($white, center);
+      }
+    }
+  }
+}
